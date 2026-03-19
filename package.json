@@ -1,0 +1,24 @@
+{
+  "name": "mern",
+  "version": "1.0.0",
+  "description": "local para ABD",
+  "keywords": [
+    "nodejs",
+    "node-js"
+  ],
+  "license": "ISC",
+  "author": "Alexei Romero",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo lol\n",
+    "dev" : "nodemon index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "mysql2": "^3.20.0",
+    "nodemon": "^3.1.14"
+  }
+}
