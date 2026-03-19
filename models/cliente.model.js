@@ -10,11 +10,11 @@ const Cliente = {
     },
 
     insertOne: (cliente, callback) => {
-        db.query("INSERT INTO clientes(cliente_id, nombre, email, telefono) VALUES cliente;", [cliente], callback);
+        db.query("INSERT INTO clientes SET ?;", cliente, callback);
     },
 
     updateOne: (cliente_id, cliente, callback) => {
-        db.query("UPDATE clientes SET cliente WHERE cliente_id = ?;", [cliente_id, cliente], callback);
+        db.query("UPDATE clientes SET ? WHERE cliente_id = ?;", [cliente, cliente_id], callback);
     },
 
     deleteOne(cliente_id, callback) {

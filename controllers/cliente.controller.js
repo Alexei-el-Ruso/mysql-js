@@ -19,18 +19,17 @@ exports.insertOne = async (req, res) => {
         if (err) return res.status(500).send({Error: err});
         res.json(data);
     })
-    res.json({"success": true});
 }
 
 exports.updateOne = async (req, res) => {
-    Cliente.updateOne(req.body,  (err, data) => {
+    Cliente.updateOne(req.params.cliente_id, req.body,  (err, data) => {
         if (err) return res.status(500).send({Error: err});
         res.json(data);
     })
 }
 
 exports.deleteOne = async (req, res) => {
-    Cliente.deleteOne(req.params.id,  (err, data) => {
+    Cliente.deleteOne(req.params.cliente_id,  (err, data) => {
         if (err) return res.status(500).send({Error: err});
         res.json(data);
     })
