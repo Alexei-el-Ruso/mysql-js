@@ -1,1 +1,1 @@
-# mysql-js
+Solo de pruebas, nada de utilidad para proyectos serios
