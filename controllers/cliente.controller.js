@@ -8,7 +8,7 @@ exports.getAll = async (req, res) => {
 }
 
 exports.getById = async (req, res) => {
-    Cliente.getById(req.params.id,  (err, data) => {
+    Cliente.getById(req.params.cliente_id,  (err, data) => {
         if (err) return res.status(500).send({Error: err});
         res.json(data);
     })

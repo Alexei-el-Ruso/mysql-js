@@ -7,7 +7,7 @@
     "node-js"
   ],
   "license": "ISC",
-  "author": "Alexei Romero",
+  "author": "Anonymous",
   "type": "commonjs",
   "main": "index.js",
   "scripts": {

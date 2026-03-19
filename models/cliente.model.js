@@ -6,7 +6,7 @@ const Cliente = {
     },
 
     getById: (cliente_id, callback) => {
-        db.query("SELECT cliente_id FROM clientes WHERE cliente_id = ?;", [cliente_id], callback);
+        db.query("SELECT * FROM clientes WHERE cliente_id = ?;", [cliente_id], callback);
     },
 
     insertOne: (cliente, callback) => {
