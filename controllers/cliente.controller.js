@@ -21,6 +21,14 @@ exports.insertOne = async (req, res) => {
     })
 }
 
+exports.insertSecure  = async (req, res) => {
+    const {cliente_id, nombre, email, telefono} = req.body;
+    Cliente.insertOne(cliente_id, nombre, email, telefono, (err, data) => {
+        if (err) return res.status(500).send({Error: err});
+        res.json(data);
+    })
+}
+
 exports.updateOne = async (req, res) => {
     Cliente.updateOne(req.params.cliente_id, req.body,  (err, data) => {
         if (err) return res.status(500).send({Error: err});
